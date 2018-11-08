@@ -4,6 +4,7 @@ namespace App\Servers\Resources;
 
 
 use Illuminate\Http\Resources\Json\JsonResource;
+use App\Modules\Resources\ModuleResource;
 
 /**
  */
@@ -22,6 +23,7 @@ class ServerResource extends JsonResource
             'name' => $this->name,
             'price' => (float)$this->price,
             'valid' => (bool)$this->valid,
+            'modules' => ModuleResource::collection($this->modules),
         ];
     }
 }

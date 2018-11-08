@@ -14023,10 +14023,10 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.config.productionTip = false;
 //Vue.component('TokenForm', require('./components/TokenForm'));
 
 axios.interceptors.request.use(function (config) {
-  //let token = localStorage.getItem('authtoken');
-  var token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjJjNjFkNjVmZjA4NzE1Y2Q4ODEyYzYwMDRkNzUxNjM5OTI3YzIxZTBlNmQ1ZDAwZWQyM2I3OThjNjg3YzQxYTlmYTZmM2E5YjhlN2JkOWI5In0.eyJhdWQiOiIxIiwianRpIjoiMmM2MWQ2NWZmMDg3MTVjZDg4MTJjNjAwNGQ3NTE2Mzk5MjdjMjFlMGU2ZDVkMDBlZDIzYjc5OGM2ODdjNDFhOWZhNmYzYTliOGU3YmQ5YjkiLCJpYXQiOjE1NDE1OTkyNzQsIm5iZiI6MTU0MTU5OTI3NCwiZXhwIjoxNTczMTM1Mjc0LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.DiwdI4tLFC8ghEz1P4wC-tjJVQRGf6qRjlTc0SQquC_dFI4rjbnecwjQzhejplT22Fnv8Mvay0ZpoTyhmnbPyjqrO12aTQaed0hiQI5q4P4W86uL03vzb9gQMJWx7yii2Id9mqWJgZzI_y1HhfV9-0r_caDhpxrSPbinLxr7Uy0j0DyKnfDuWHFABXeWfpgZ1EOvcUG80VZHKe3To4O6z8TE8X23rUml26PY9hI59GT3ZpaPvDUtE0d0VjfmivTBUvpNWHD4pYrI46sPUgirVD9srw2vk1uXse_Vbg-3SDXxUm-heQVcTNdzDf62Qro2jMsljJYgr_gAf8V9MUd6XaI1C10m_ON_2R2gvfVjjCH-FBQO8CB94N5bR9mfV21cA91U7Kgz4b2umVD9Kg4aB7UN41LTUG-qJqp8_RuDh20I-5wFtsRIEKdw5TMbG9LlkOLWnVVhrGvcyUm8Vinvc1eNckG2719wPlLxpy0S-T_N6jPAPDfY5iwZhvTHOqJmPWhaD27JkRnGxRp8i5CwwZQdlusEGeAlH0gAjt3aeu9QwsqU2I8E-rvpFSUOpodYUt6mppliLCyUa2cLXhRCXnbzMtWUCN-gvYxXo5DBcrulQzFk9xmIH4kMYZgglk-3Yi10QfYGIanzv-oE0Oj103phxtBXPwm6b_G0lugIcok';
-  if (token) {
-    config.headers['Authorization'] = 'Bearer ' + token;
+  //let tokenOauth = localStorage.getItem('authtoken');
+  var tokenOauth = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjJjNjFkNjVmZjA4NzE1Y2Q4ODEyYzYwMDRkNzUxNjM5OTI3YzIxZTBlNmQ1ZDAwZWQyM2I3OThjNjg3YzQxYTlmYTZmM2E5YjhlN2JkOWI5In0.eyJhdWQiOiIxIiwianRpIjoiMmM2MWQ2NWZmMDg3MTVjZDg4MTJjNjAwNGQ3NTE2Mzk5MjdjMjFlMGU2ZDVkMDBlZDIzYjc5OGM2ODdjNDFhOWZhNmYzYTliOGU3YmQ5YjkiLCJpYXQiOjE1NDE1OTkyNzQsIm5iZiI6MTU0MTU5OTI3NCwiZXhwIjoxNTczMTM1Mjc0LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.DiwdI4tLFC8ghEz1P4wC-tjJVQRGf6qRjlTc0SQquC_dFI4rjbnecwjQzhejplT22Fnv8Mvay0ZpoTyhmnbPyjqrO12aTQaed0hiQI5q4P4W86uL03vzb9gQMJWx7yii2Id9mqWJgZzI_y1HhfV9-0r_caDhpxrSPbinLxr7Uy0j0DyKnfDuWHFABXeWfpgZ1EOvcUG80VZHKe3To4O6z8TE8X23rUml26PY9hI59GT3ZpaPvDUtE0d0VjfmivTBUvpNWHD4pYrI46sPUgirVD9srw2vk1uXse_Vbg-3SDXxUm-heQVcTNdzDf62Qro2jMsljJYgr_gAf8V9MUd6XaI1C10m_ON_2R2gvfVjjCH-FBQO8CB94N5bR9mfV21cA91U7Kgz4b2umVD9Kg4aB7UN41LTUG-qJqp8_RuDh20I-5wFtsRIEKdw5TMbG9LlkOLWnVVhrGvcyUm8Vinvc1eNckG2719wPlLxpy0S-T_N6jPAPDfY5iwZhvTHOqJmPWhaD27JkRnGxRp8i5CwwZQdlusEGeAlH0gAjt3aeu9QwsqU2I8E-rvpFSUOpodYUt6mppliLCyUa2cLXhRCXnbzMtWUCN-gvYxXo5DBcrulQzFk9xmIH4kMYZgglk-3Yi10QfYGIanzv-oE0Oj103phxtBXPwm6b_G0lugIcok';
+  if (tokenOauth) {
+    config.headers['Authorization'] = 'Bearer ' + tokenOauth;
   }
   return config;
 }, function (error) {
@@ -47437,6 +47437,8 @@ module.exports = Component.exports
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ServerForm__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ServerForm___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__ServerForm__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ModuleForm__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ModuleForm___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__ModuleForm__);
 //
 //
 //
@@ -47473,6 +47475,26 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 
 
 
@@ -47480,38 +47502,80 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   data: function data() {
     return {
       showServerForm: false,
+      showModuleForm: false,
       items: [],
-      currentServer: null
+      currentServer: null,
+      pagination: {
+        current_page: 0,
+        from: null,
+        last_page: null,
+        path: null,
+        per_page: null,
+        to: null,
+        total: null
+      },
+      paginationLinks: {
+        first: null,
+        last: null,
+        next: null,
+        prev: null
+      }
     };
   },
   components: {
-    ServerForm: ServerForm
+    ServerForm: __WEBPACK_IMPORTED_MODULE_0__ServerForm___default.a,
+    ModuleForm: __WEBPACK_IMPORTED_MODULE_1__ModuleForm___default.a
   },
   created: function created() {
     this.updateList();
   },
   methods: {
     addServer: function addServer() {
-      this.closeForm();
-      this.$nextTick(function () {
-        this.currentServer = null;
-        this.showServerForm = true;
-      });
+      var closed = this.closeForm();
+      if (closed) {
+        this.$nextTick(function () {
+          this.currentServer = null;
+          this.showServerForm = true;
+        });
+      }
     },
-    updateList: function updateList() {
+    addModule: function addModule(server) {
+      var closed = this.closeForm();
+      if (closed) {
+        this.$nextTick(function () {
+          this.currentServer = server;
+          this.showModuleForm = true;
+        });
+      }
+    },
+    updateList: function updateList(page) {
       var _this = this;
 
-      axios.get('/api/server/list').then(function (response) {
-        return _this.items = response.data.list;
+      if (page == undefined) {
+        page = this.pagination.current_page;
+      }
+      axios.get('/api/server/list?page=' + page).then(function (response) {
+        return _this.items = response.data.data, _this.pagination = response.data.meta, _this.paginationLinks = response.data.links;
       });
     },
 
-    closeForm: function closeForm() {
-      if (this.currentServer == true) {
-        if (confirm("Close current form?")) {
-          this.currentServer = false;
+    closeForm: function closeForm(force) {
+      if (force == true) {
+        this.showServerForm = false;
+        this.showModuleForm = false;
+        this.currentServer = null;
+      } else {
+        if (this.showServerForm || this.showModuleForm) {
+          if (confirm("Close current form?")) {
+            this.showServerForm = false;
+            this.showModuleForm = false;
+            this.currentServer = null;
+          } else {
+            return false;
+          }
         }
       }
+      return true;
     }
   }
 });
@@ -47525,10 +47589,11 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "row" }, [
-    _c("div", { staticClass: "col-md-6" }, [
+    _c("div", { staticClass: "col-md-7" }, [
       _c("div", { staticClass: "panel panel-default" }, [
         _c("div", { staticClass: "panel-heading" }, [
-          _vm._v("\n            Server's list\n            "),
+          _c("span", { staticClass: "main-title" }, [_vm._v("Server's list")]),
+          _vm._v(" "),
           _c(
             "button",
             {
@@ -47544,33 +47609,161 @@ var render = function() {
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "panel-body table-responsive" }, [
+          _vm.pagination.last_page > 1
+            ? _c("ul", { staticClass: "pagination" }, [
+                _vm.paginationLinks.first
+                  ? _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "page-link",
+                          attrs: { href: "#" },
+                          on: {
+                            click: function($event) {
+                              _vm.updateList(1)
+                            }
+                          }
+                        },
+                        [_vm._v("First")]
+                      )
+                    ])
+                  : _vm._e(),
+                _vm._v(" "),
+                _vm.paginationLinks.prev
+                  ? _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "page-link",
+                          attrs: { href: "#" },
+                          on: {
+                            click: function($event) {
+                              _vm.updateList(_vm.pagination.current_page - 1)
+                            }
+                          }
+                        },
+                        [_vm._v("Previous")]
+                      )
+                    ])
+                  : _vm._e(),
+                _vm._v(" "),
+                _c("li", { staticClass: "page-item active" }, [
+                  _c("a", { staticClass: "page-link" }, [
+                    _vm._v(_vm._s(_vm.pagination.current_page))
+                  ])
+                ]),
+                _vm._v(" "),
+                _vm.paginationLinks.next
+                  ? _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "page-link",
+                          attrs: { href: "#" },
+                          on: {
+                            click: function($event) {
+                              _vm.updateList(_vm.pagination.current_page + 1)
+                            }
+                          }
+                        },
+                        [_vm._v("Next")]
+                      )
+                    ])
+                  : _vm._e(),
+                _vm._v(" "),
+                _vm.paginationLinks.last
+                  ? _c("li", { staticClass: "page-item" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "page-link",
+                          attrs: { href: "#" },
+                          on: {
+                            click: function($event) {
+                              _vm.updateList(_vm.pagination.last_page)
+                            }
+                          }
+                        },
+                        [_vm._v("Last")]
+                      )
+                    ])
+                  : _vm._e()
+              ])
+            : _vm._e(),
+          _vm._v(" "),
           _c("table", { staticClass: "table" }, [
             _vm._m(0),
             _vm._v(" "),
             _c(
               "tbody",
               _vm._l(_vm.items, function(item) {
-                return _c("tr", { class: [item.valid ? "table-danger" : ""] }, [
-                  _c("td", [_vm._v(_vm._s(item.name))]),
-                  _vm._v(" "),
-                  _c("td", [_vm._v(_vm._s(item.valid ? "Yes" : "No"))]),
-                  _vm._v(" "),
-                  _c("td", [
-                    _c(
-                      "a",
-                      {
-                        staticClass: "text-primary",
-                        attrs: { href: "#" },
-                        on: {
-                          click: function($event) {
-                            _vm.addModule(item)
+                return _c(
+                  "tr",
+                  {
+                    class: [
+                      _vm.currentServer && item.id == _vm.currentServer.id
+                        ? "table-success"
+                        : item.valid
+                        ? ""
+                        : "table-danger"
+                    ]
+                  },
+                  [
+                    _c("td", [
+                      _vm._v(
+                        "\n                    Asset id: " +
+                          _vm._s(item.assetId)
+                      ),
+                      _c("br"),
+                      _vm._v(
+                        "\n                    Brand: " + _vm._s(item.brand)
+                      ),
+                      _c("br"),
+                      _vm._v(
+                        "\n                    Name: " + _vm._s(item.name)
+                      ),
+                      _c("br"),
+                      _vm._v(
+                        "\n                    Price: " +
+                          _vm._s(item.price) +
+                          "\n                  "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c(
+                        "ul",
+                        _vm._l(item.modules, function(module_item) {
+                          return _c("li", [
+                            _vm._v(
+                              "\n                        " +
+                                _vm._s(module_item.type) +
+                                " (size: " +
+                                _vm._s(module_item.size) +
+                                ")\n                      "
+                            )
+                          ])
+                        })
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-sm btn-info",
+                          attrs: { type: "button" },
+                          on: {
+                            click: function($event) {
+                              _vm.addModule(item)
+                            }
                           }
-                        }
-                      },
-                      [_vm._v("add module")]
-                    )
-                  ])
-                ])
+                        },
+                        [_vm._v("+module")]
+                      )
+                    ])
+                  ]
+                )
               })
             )
           ])
@@ -47580,8 +47773,12 @@ var render = function() {
     _vm._v(" "),
     _c(
       "div",
-      { staticClass: "col-md-6" },
-      [_vm.showServerForm ? _c("ServerForm") : _vm._e()],
+      { staticClass: "col-md-5" },
+      [
+        _vm.showServerForm ? _c("ServerForm") : _vm._e(),
+        _vm._v(" "),
+        _vm.showModuleForm ? _c("ModuleForm") : _vm._e()
+      ],
       1
     )
   ])
@@ -47595,7 +47792,7 @@ var staticRenderFns = [
       _c("tr", [
         _c("th", { attrs: { scope: "col" } }, [_vm._v("Description")]),
         _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Valid")]),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Modules list")]),
         _vm._v(" "),
         _c("th", { attrs: { scope: "col" } }, [_vm._v("Action")])
       ])
@@ -47641,98 +47838,13 @@ if (false) {
 
 /***/ }),
 /* 47 */,
-/* 48 */
-/***/ (function(module, exports) {
-
-/*
-	MIT License http://www.opensource.org/licenses/mit-license.php
-	Author Tobias Koppers @sokra
-*/
-// css base code, injected by the css-loader
-module.exports = function(useSourceMap) {
-	var list = [];
-
-	// return the list of modules as css string
-	list.toString = function toString() {
-		return this.map(function (item) {
-			var content = cssWithMappingToString(item, useSourceMap);
-			if(item[2]) {
-				return "@media " + item[2] + "{" + content + "}";
-			} else {
-				return content;
-			}
-		}).join("");
-	};
-
-	// import a list of modules into the list
-	list.i = function(modules, mediaQuery) {
-		if(typeof modules === "string")
-			modules = [[null, modules, ""]];
-		var alreadyImportedModules = {};
-		for(var i = 0; i < this.length; i++) {
-			var id = this[i][0];
-			if(typeof id === "number")
-				alreadyImportedModules[id] = true;
-		}
-		for(i = 0; i < modules.length; i++) {
-			var item = modules[i];
-			// skip already imported module
-			// this implementation is not 100% perfect for weird media query combinations
-			//  when a module is imported multiple times with different media queries.
-			//  I hope this will never occur (Hey this way we have smaller bundles)
-			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
-				if(mediaQuery && !item[2]) {
-					item[2] = mediaQuery;
-				} else if(mediaQuery) {
-					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
-				}
-				list.push(item);
-			}
-		}
-	};
-	return list;
-};
-
-function cssWithMappingToString(item, useSourceMap) {
-	var content = item[1] || '';
-	var cssMapping = item[3];
-	if (!cssMapping) {
-		return content;
-	}
-
-	if (useSourceMap && typeof btoa === 'function') {
-		var sourceMapping = toComment(cssMapping);
-		var sourceURLs = cssMapping.sources.map(function (source) {
-			return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'
-		});
-
-		return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
-	}
-
-	return [content].join('\n');
-}
-
-// Adapted from convert-source-map (MIT)
-function toComment(sourceMap) {
-	// eslint-disable-next-line no-undef
-	var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
-	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
-
-	return '/*# ' + data + ' */';
-}
-
-
-/***/ }),
+/* 48 */,
 /* 49 */,
 /* 50 */,
 /* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(52)
-}
 var normalizeComponent = __webpack_require__(11)
 /* script */
 var __vue_script__ = __webpack_require__(56)
@@ -47741,7 +47853,7 @@ var __vue_template__ = __webpack_require__(57)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
-var __vue_styles__ = injectStyle
+var __vue_styles__ = null
 /* scopeId */
 var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
@@ -47776,307 +47888,10 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 52 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(53);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(54)("5327e7c2", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-9bf7505c\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ServerForm.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-9bf7505c\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ServerForm.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 53 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(48)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n.dragArea {\n  min-height: 10px;\n}\n.dragArea .badge {\n  cursor: pointer;\n}\n.card {\n  height: 92%;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 54 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/*
-  MIT License http://www.opensource.org/licenses/mit-license.php
-  Author Tobias Koppers @sokra
-  Modified by Evan You @yyx990803
-*/
-
-var hasDocument = typeof document !== 'undefined'
-
-if (typeof DEBUG !== 'undefined' && DEBUG) {
-  if (!hasDocument) {
-    throw new Error(
-    'vue-style-loader cannot be used in a non-browser environment. ' +
-    "Use { target: 'node' } in your Webpack config to indicate a server-rendering environment."
-  ) }
-}
-
-var listToStyles = __webpack_require__(55)
-
-/*
-type StyleObject = {
-  id: number;
-  parts: Array<StyleObjectPart>
-}
-
-type StyleObjectPart = {
-  css: string;
-  media: string;
-  sourceMap: ?string
-}
-*/
-
-var stylesInDom = {/*
-  [id: number]: {
-    id: number,
-    refs: number,
-    parts: Array<(obj?: StyleObjectPart) => void>
-  }
-*/}
-
-var head = hasDocument && (document.head || document.getElementsByTagName('head')[0])
-var singletonElement = null
-var singletonCounter = 0
-var isProduction = false
-var noop = function () {}
-var options = null
-var ssrIdKey = 'data-vue-ssr-id'
-
-// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
-// tags it will allow on a page
-var isOldIE = typeof navigator !== 'undefined' && /msie [6-9]\b/.test(navigator.userAgent.toLowerCase())
-
-module.exports = function (parentId, list, _isProduction, _options) {
-  isProduction = _isProduction
-
-  options = _options || {}
-
-  var styles = listToStyles(parentId, list)
-  addStylesToDom(styles)
-
-  return function update (newList) {
-    var mayRemove = []
-    for (var i = 0; i < styles.length; i++) {
-      var item = styles[i]
-      var domStyle = stylesInDom[item.id]
-      domStyle.refs--
-      mayRemove.push(domStyle)
-    }
-    if (newList) {
-      styles = listToStyles(parentId, newList)
-      addStylesToDom(styles)
-    } else {
-      styles = []
-    }
-    for (var i = 0; i < mayRemove.length; i++) {
-      var domStyle = mayRemove[i]
-      if (domStyle.refs === 0) {
-        for (var j = 0; j < domStyle.parts.length; j++) {
-          domStyle.parts[j]()
-        }
-        delete stylesInDom[domStyle.id]
-      }
-    }
-  }
-}
-
-function addStylesToDom (styles /* Array<StyleObject> */) {
-  for (var i = 0; i < styles.length; i++) {
-    var item = styles[i]
-    var domStyle = stylesInDom[item.id]
-    if (domStyle) {
-      domStyle.refs++
-      for (var j = 0; j < domStyle.parts.length; j++) {
-        domStyle.parts[j](item.parts[j])
-      }
-      for (; j < item.parts.length; j++) {
-        domStyle.parts.push(addStyle(item.parts[j]))
-      }
-      if (domStyle.parts.length > item.parts.length) {
-        domStyle.parts.length = item.parts.length
-      }
-    } else {
-      var parts = []
-      for (var j = 0; j < item.parts.length; j++) {
-        parts.push(addStyle(item.parts[j]))
-      }
-      stylesInDom[item.id] = { id: item.id, refs: 1, parts: parts }
-    }
-  }
-}
-
-function createStyleElement () {
-  var styleElement = document.createElement('style')
-  styleElement.type = 'text/css'
-  head.appendChild(styleElement)
-  return styleElement
-}
-
-function addStyle (obj /* StyleObjectPart */) {
-  var update, remove
-  var styleElement = document.querySelector('style[' + ssrIdKey + '~="' + obj.id + '"]')
-
-  if (styleElement) {
-    if (isProduction) {
-      // has SSR styles and in production mode.
-      // simply do nothing.
-      return noop
-    } else {
-      // has SSR styles but in dev mode.
-      // for some reason Chrome can't handle source map in server-rendered
-      // style tags - source maps in <style> only works if the style tag is
-      // created and inserted dynamically. So we remove the server rendered
-      // styles and inject new ones.
-      styleElement.parentNode.removeChild(styleElement)
-    }
-  }
-
-  if (isOldIE) {
-    // use singleton mode for IE9.
-    var styleIndex = singletonCounter++
-    styleElement = singletonElement || (singletonElement = createStyleElement())
-    update = applyToSingletonTag.bind(null, styleElement, styleIndex, false)
-    remove = applyToSingletonTag.bind(null, styleElement, styleIndex, true)
-  } else {
-    // use multi-style-tag mode in all other cases
-    styleElement = createStyleElement()
-    update = applyToTag.bind(null, styleElement)
-    remove = function () {
-      styleElement.parentNode.removeChild(styleElement)
-    }
-  }
-
-  update(obj)
-
-  return function updateStyle (newObj /* StyleObjectPart */) {
-    if (newObj) {
-      if (newObj.css === obj.css &&
-          newObj.media === obj.media &&
-          newObj.sourceMap === obj.sourceMap) {
-        return
-      }
-      update(obj = newObj)
-    } else {
-      remove()
-    }
-  }
-}
-
-var replaceText = (function () {
-  var textStore = []
-
-  return function (index, replacement) {
-    textStore[index] = replacement
-    return textStore.filter(Boolean).join('\n')
-  }
-})()
-
-function applyToSingletonTag (styleElement, index, remove, obj) {
-  var css = remove ? '' : obj.css
-
-  if (styleElement.styleSheet) {
-    styleElement.styleSheet.cssText = replaceText(index, css)
-  } else {
-    var cssNode = document.createTextNode(css)
-    var childNodes = styleElement.childNodes
-    if (childNodes[index]) styleElement.removeChild(childNodes[index])
-    if (childNodes.length) {
-      styleElement.insertBefore(cssNode, childNodes[index])
-    } else {
-      styleElement.appendChild(cssNode)
-    }
-  }
-}
-
-function applyToTag (styleElement, obj) {
-  var css = obj.css
-  var media = obj.media
-  var sourceMap = obj.sourceMap
-
-  if (media) {
-    styleElement.setAttribute('media', media)
-  }
-  if (options.ssrId) {
-    styleElement.setAttribute(ssrIdKey, obj.id)
-  }
-
-  if (sourceMap) {
-    // https://developer.chrome.com/devtools/docs/javascript-debugging
-    // this makes source maps inside style tags work properly in Chrome
-    css += '\n/*# sourceURL=' + sourceMap.sources[0] + ' */'
-    // http://stackoverflow.com/a/26603875
-    css += '\n/*# sourceMappingURL=data:application/json;base64,' + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + ' */'
-  }
-
-  if (styleElement.styleSheet) {
-    styleElement.styleSheet.cssText = css
-  } else {
-    while (styleElement.firstChild) {
-      styleElement.removeChild(styleElement.firstChild)
-    }
-    styleElement.appendChild(document.createTextNode(css))
-  }
-}
-
-
-/***/ }),
-/* 55 */
-/***/ (function(module, exports) {
-
-/**
- * Translates the list format produced by css-loader into something
- * easier to manipulate.
- */
-module.exports = function listToStyles (parentId, list) {
-  var styles = []
-  var newStyles = {}
-  for (var i = 0; i < list.length; i++) {
-    var item = list[i]
-    var id = item[0]
-    var css = item[1]
-    var media = item[2]
-    var sourceMap = item[3]
-    var part = {
-      id: parentId + ':' + i,
-      css: css,
-      media: media,
-      sourceMap: sourceMap
-    }
-    if (!newStyles[id]) {
-      styles.push(newStyles[id] = { id: id, parts: [part] })
-    } else {
-      newStyles[id].parts.push(part)
-    }
-  }
-  return styles
-}
-
-
-/***/ }),
+/* 52 */,
+/* 53 */,
+/* 54 */,
+/* 55 */,
 /* 56 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -48112,112 +47927,46 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      id: null,
-      scopesDeny: [],
-      scopesAllow: [],
-      locationsDeny: [],
-      locationsAllow: [],
-      csrfToken: Laravel.csrfToken,
-      whiteIP: "",
-      description: "",
-      token: "",
-      copy: 0,
-      errors: ""
+      assetId: "",
+      brand: "",
+      name: "",
+      price: 1,
+      errors: false
     };
   },
-  created: function created() {
-    var _this = this;
-
-    axios.get('/scopes').then(function (response) {
-      return _this.scopesDeny = response.data.scopes, _this.locationsDeny = response.data.locations, _this.loadItem();
-    });
-  },
   methods: {
-    copyTokenText: function copyTokenText() {
-      $('#copy-token').select();
-      document.execCommand("copy");
-    },
-    generateToken: function generateToken() {
-      var _this2 = this;
+    save: function save() {
+      var _this = this;
 
       axios({
         method: 'post',
-        url: 'generateToken',
+        url: '/api/server/add',
         data: {
-          scopesAllow: this.scopesAllow,
-          locationsAllow: this.locationsAllow,
-          csrfToken: this.csrfToken,
-          whiteIP: this.whiteIP,
-          description: this.description,
-          id: this.id,
-          copy: this.copy
+          assetId: this.assetId,
+          brand: this.brand,
+          name: this.name,
+          price: this.price
         }
       }).then(function (response) {
-        if (response.data.result == 'OK') {
-          _this2.token = response.data.token;
-          _this2.id = response.data.id;
-          _this2.$parent.updateList();
-          _this2.copy = 0;
-        } else {
-          _this2.errors = response.data.message;
-        }
+        _this.$parent.updateList();
+        _this.closeForm(true);
+        alert('Creating success');
       }).catch(function (error) {
-        alert('Unknowen error');
+        if (error.response.data.errors != undefined) {
+          _this.errors = error.response.data.errors;
+        } else {
+          alert('Unknown error');
+        }
       });
     },
-    closeForm: function closeForm() {
-      this.$parent.closeForm();
-    },
-    loadItem: function loadItem() {
-      if (this.$parent.currentToken) {
-        if (this.$parent.copyToken == 0) {
-          this.id = this.$parent.currentToken.id;
-          this.token = this.$parent.currentToken.token;
-        }
-        this.copy = this.$parent.copyToken;
-        this.whiteIP = this.$parent.currentToken.white_ip;
-        this.description = this.$parent.currentToken.name;
-
-        var scopes = JSON.parse(this.$parent.currentToken.scopes);
-        for (var i = 0; i < scopes.length; ++i) {
-          var key = scopes[i];
-          var found = false;
-          for (var k = 0; k < this.scopesDeny.length; ++k) {
-            if (this.scopesDeny[k].code == key) {
-              this.scopesAllow.push(this.scopesDeny[k]);
-              this.scopesDeny.splice(k, 1);
-              found = true;
-              break;
-            }
-          }
-          if (found == false) {
-            for (var k = 0; k < this.locationsDeny.length; ++k) {
-              if (this.locationsDeny[k].code == key) {
-                this.locationsAllow.push(this.locationsDeny[k]);
-                this.locationsDeny.splice(k, 1);
-                break;
-              }
-            }
-          }
-          found = false;
-        }
-      }
+    closeForm: function closeForm(force) {
+      this.$parent.closeForm(force);
     }
-  },
-  components: {
-    draggable: draggable
   }
 });
 
@@ -48233,15 +47982,29 @@ var render = function() {
     "form",
     {
       staticClass: "panel panel-default",
-      attrs: { id: "token_form", method: "POST" },
+      attrs: { id: "server-form", method: "POST" },
       on: {
         submit: function($event) {
           $event.preventDefault()
-          return _vm.generateToken($event)
+          return _vm.save($event)
         }
       }
     },
     [
+      _c("div", { staticClass: "panel-heading" }, [
+        _c("span", { staticClass: "main-title" }, [_vm._v("New server")]),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: "btn btn-warning float-sm-right btn-sm",
+            attrs: { type: "button" },
+            on: { click: _vm.closeForm }
+          },
+          [_vm._v("X")]
+        )
+      ]),
+      _vm._v(" "),
       _c(
         "div",
         { staticClass: "panel-body" },
@@ -48250,174 +48013,127 @@ var render = function() {
             ? _c(
                 "div",
                 { staticClass: "alert alert-danger", attrs: { role: "alert" } },
-                [_vm._v("\n      " + _vm._s(_vm.errors) + "\n    ")]
+                _vm._l(_vm.errors, function(error) {
+                  return _c("ul", [_c("li", [_vm._v(_vm._s(error))])])
+                })
               )
             : _vm._e(),
           _vm._v(" "),
-          _c("input", {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.csrfToken,
-                expression: "csrfToken"
-              }
-            ],
-            attrs: { type: "hidden", name: "_token" },
-            domProps: { value: _vm.csrfToken },
-            on: {
-              input: function($event) {
-                if ($event.target.composing) {
-                  return
-                }
-                _vm.csrfToken = $event.target.value
-              }
-            }
-          }),
-          _vm._v(" "),
-          _c("labeL", [_vm._v("Description")]),
+          _c("labeL", [_vm._v("*Asset id")]),
           _vm._v(" "),
           _c("input", {
             directives: [
               {
                 name: "model",
                 rawName: "v-model",
-                value: _vm.description,
-                expression: "description"
+                value: _vm.assetId,
+                expression: "assetId"
               }
             ],
             staticClass: "form-control mb-3",
-            attrs: { type: "text", required: "", name: "description" },
-            domProps: { value: _vm.description },
-            on: {
-              input: function($event) {
-                if ($event.target.composing) {
-                  return
-                }
-                _vm.description = $event.target.value
-              }
-            }
-          }),
-          _vm._v(" "),
-          _c("input", {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.copy,
-                expression: "copy"
-              }
-            ],
-            attrs: { type: "hidden", name: "copy" },
-            domProps: { value: _vm.copy },
-            on: {
-              input: function($event) {
-                if ($event.target.composing) {
-                  return
-                }
-                _vm.copy = $event.target.value
-              }
-            }
-          }),
-          _vm._v(" "),
-          _c("input", {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.id,
-                expression: "id"
-              }
-            ],
-            attrs: { type: "hidden", name: "id" },
-            domProps: { value: _vm.id },
-            on: {
-              input: function($event) {
-                if ($event.target.composing) {
-                  return
-                }
-                _vm.id = $event.target.value
-              }
-            }
-          }),
-          _vm._v(" "),
-          _c("div", { staticClass: "card border-success mb-3" }, [
-            _vm._m(0),
-            _vm._v(" "),
-            _c("div", { staticClass: "card-body text-success" }, [
-              _c("textarea", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.whiteIP,
-                    expression: "whiteIP"
-                  }
-                ],
-                staticClass: "form-control",
-                domProps: { value: _vm.whiteIP },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.whiteIP = $event.target.value
-                  }
-                }
-              })
-            ])
-          ]),
-          _vm._v(" "),
-          _vm.token
-            ? _c(
-                "div",
-                { staticStyle: { "max-width": "100%", overflow: "auto" } },
-                [
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-info btn-sm",
-                      attrs: { type: "button" },
-                      on: { click: _vm.copyTokenText }
-                    },
-                    [_vm._v("Copy token")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "textarea",
-                    {
-                      staticStyle: { opacity: "0", height: "0", width: "0" },
-                      attrs: { id: "copy-token" }
-                    },
-                    [_vm._v(_vm._s(_vm.token))]
-                  ),
-                  _vm._v("\n      " + _vm._s(_vm.token) + "\n    ")
-                ]
-              )
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.errors
-            ? _c(
-                "div",
-                { staticClass: "alert alert-danger", attrs: { role: "alert" } },
-                [_vm._v("\n      " + _vm._s(_vm.errors) + "\n    ")]
-              )
-            : _vm._e(),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              staticClass: "btn btn-warning",
-              attrs: { type: "button" },
-              on: { click: _vm.closeForm }
+            attrs: {
+              type: "text",
+              required: "",
+              maxlength: "100",
+              name: "assetId"
             },
-            [_vm._v("Close")]
-          ),
+            domProps: { value: _vm.assetId },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.assetId = $event.target.value
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("labeL", [_vm._v("*Brand")]),
+          _vm._v(" "),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.brand,
+                expression: "brand"
+              }
+            ],
+            staticClass: "form-control mb-3",
+            attrs: {
+              type: "text",
+              required: "",
+              maxlength: "100",
+              name: "brand"
+            },
+            domProps: { value: _vm.brand },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.brand = $event.target.value
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("labeL", [_vm._v("*Name")]),
+          _vm._v(" "),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.name,
+                expression: "name"
+              }
+            ],
+            staticClass: "form-control mb-3",
+            attrs: {
+              type: "text",
+              required: "",
+              maxlength: "100",
+              name: "name"
+            },
+            domProps: { value: _vm.name },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.name = $event.target.value
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("labeL", [_vm._v("*Price")]),
+          _vm._v(" "),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.price,
+                expression: "price"
+              }
+            ],
+            staticClass: "form-control mb-3",
+            attrs: { type: "number", required: "", min: "1", name: "price" },
+            domProps: { value: _vm.price },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.price = $event.target.value
+              }
+            }
+          }),
           _vm._v(" "),
           _c(
             "button",
             { staticClass: "btn btn-primary", attrs: { type: "submit" } },
-            [_vm._v("Save and generate token")]
+            [_vm._v("Save")]
           )
         ],
         1
@@ -48425,23 +48141,301 @@ var render = function() {
     ]
   )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-header" }, [
-      _vm._v("\n        Allowed IP addresses and domains\n        "),
-      _c("small", [_vm._v('(delimiter: ",")')])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
     require("vue-hot-reload-api")      .rerender("data-v-9bf7505c", module.exports)
+  }
+}
+
+/***/ }),
+/* 58 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(11)
+/* script */
+var __vue_script__ = __webpack_require__(59)
+/* template */
+var __vue_template__ = __webpack_require__(60)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/ModuleForm.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-4446d40a", Component.options)
+  } else {
+    hotAPI.reload("data-v-4446d40a", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 59 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      serverId: null,
+      type: "",
+      size: 1,
+      types: [],
+      errors: false
+    };
+  },
+  created: function created() {
+    var _this = this;
+
+    this.serverId = this.$parent.currentServer.id;
+    axios.get('/api/module/types').then(function (response) {
+      return _this.types = response.data.data;
+    }).catch(function (error) {
+      alert('Unknown error');
+    });
+  },
+  methods: {
+    save: function save() {
+      var _this2 = this;
+
+      axios({
+        method: 'post',
+        url: '/api/module/add',
+        data: {
+          serverId: this.serverId,
+          type: this.type,
+          size: this.size
+        }
+      }).then(function (response) {
+        _this2.$parent.updateList();
+        _this2.closeForm(true);
+        alert('Creating success');
+      }).catch(function (error) {
+        if (error.response.data.errors != undefined) {
+          _this2.errors = error.response.data.errors;
+        } else {
+          alert('Unknown error');
+        }
+      });
+    },
+    closeForm: function closeForm(force) {
+      this.$parent.closeForm(force);
+    }
+  }
+});
+
+/***/ }),
+/* 60 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "form",
+    {
+      staticClass: "panel panel-default",
+      attrs: { id: "module-form", method: "POST" },
+      on: {
+        submit: function($event) {
+          $event.preventDefault()
+          return _vm.save($event)
+        }
+      }
+    },
+    [
+      _c("div", { staticClass: "panel-heading" }, [
+        _c("span", { staticClass: "main-title" }, [_vm._v("New module")]),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: "btn btn-warning float-sm-right btn-sm",
+            attrs: { type: "button" },
+            on: { click: _vm.closeForm }
+          },
+          [_vm._v("X")]
+        )
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "panel-body" },
+        [
+          _vm.errors
+            ? _c(
+                "div",
+                { staticClass: "alert alert-danger", attrs: { role: "alert" } },
+                _vm._l(_vm.errors, function(error) {
+                  return _c("ul", [_c("li", [_vm._v(_vm._s(error))])])
+                })
+              )
+            : _vm._e(),
+          _vm._v(" "),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.serverId,
+                expression: "serverId"
+              }
+            ],
+            staticClass: "form-control mb-3",
+            attrs: { type: "hidden", name: "server_id" },
+            domProps: { value: _vm.serverId },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.serverId = $event.target.value
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("labeL", [_vm._v("*Type")]),
+          _vm._v(" "),
+          _c(
+            "select",
+            {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.type,
+                  expression: "type"
+                }
+              ],
+              staticClass: "form-control mb-3",
+              attrs: { required: "" },
+              on: {
+                change: function($event) {
+                  var $$selectedVal = Array.prototype.filter
+                    .call($event.target.options, function(o) {
+                      return o.selected
+                    })
+                    .map(function(o) {
+                      var val = "_value" in o ? o._value : o.value
+                      return val
+                    })
+                  _vm.type = $event.target.multiple
+                    ? $$selectedVal
+                    : $$selectedVal[0]
+                }
+              }
+            },
+            _vm._l(_vm.types, function(item) {
+              return _c("option", { domProps: { value: item } }, [
+                _vm._v("\n        " + _vm._s(item) + "\n      ")
+              ])
+            })
+          ),
+          _vm._v(" "),
+          _c("labeL", [_vm._v("*Size")]),
+          _vm._v(" "),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.size,
+                expression: "size"
+              }
+            ],
+            staticClass: "form-control mb-3",
+            attrs: { type: "number", required: "", min: "1", name: "size" },
+            domProps: { value: _vm.size },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.size = $event.target.value
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c(
+            "button",
+            { staticClass: "btn btn-primary", attrs: { type: "submit" } },
+            [_vm._v("Save")]
+          )
+        ],
+        1
+      )
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-4446d40a", module.exports)
   }
 }
 

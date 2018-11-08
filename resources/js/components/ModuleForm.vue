@@ -1,7 +1,7 @@
 <template>
-  <form id="server-form" method="POST" class="panel panel-default" v-on:submit.prevent="save">
+  <form id="module-form" method="POST" class="panel panel-default" v-on:submit.prevent="save">
     <div class="panel-heading">
-      <span class="main-title">New server</span>
+      <span class="main-title">New module</span>
       <button type="button"class="btn btn-warning float-sm-right btn-sm" @click="closeForm">X</button>
     </div>
     <div class="panel-body">
@@ -10,18 +10,17 @@
           <li>{{ error }}</li>
         </ul>
       </div>
+      <input type="hidden" class="form-control mb-3" name="server_id" v-model="serverId" />
 
-      <labeL>*Asset id</labeL>
-      <input type="text" required maxlength="100" class="form-control mb-3" name="assetId" v-model="assetId" />
+      <labeL>*Type</labeL>
+      <select v-model="type" required class="form-control mb-3" >
+        <option v-for="item in types" v-bind:value="item">
+          {{ item }}
+        </option>
+      </select>
 
-      <labeL>*Brand</labeL>
-      <input type="text" required maxlength="100" class="form-control mb-3" name="brand" v-model="brand" />
-
-      <labeL>*Name</labeL>
-      <input type="text" required maxlength="100" class="form-control mb-3" name="name" v-model="name" />
-
-      <labeL>*Price</labeL>
-      <input type="number" required min="1" class="form-control mb-3" name="price" v-model="price" />
+      <labeL>*Size</labeL>
+      <input type="number" required min="1" class="form-control mb-3" name="size" v-model="size" />
 
       <button type="submit" class="btn btn-primary">Save</button>
     </div>
@@ -33,23 +32,32 @@
   export default {
     data: function() {
       return {
-        assetId: "",
-        brand: "",
-        name: "",
-        price: 1,
+        serverId: null,
+        type: "",
+        size: 1,
+        types: [],
         errors: false
       }
+    },
+    created: function() {
+      this.serverId = this.$parent.currentServer.id;
+      axios.get('/api/module/types')
+      .then(response => (
+        this.types = response.data.data
+      ))
+      .catch(error => {
+        alert('Unknown error');
+      });
     },
     methods: {
       save: function() {
         axios({
           method: 'post',
-          url: '/api/server/add',
+          url: '/api/module/add',
           data: {
-              assetId: this.assetId,
-              brand: this.brand,
-              name: this.name,
-              price: this.price
+              serverId: this.serverId,
+              type: this.type,
+              size: this.size
           }
         })
         .then(response => { 

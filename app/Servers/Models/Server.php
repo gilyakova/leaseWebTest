@@ -15,4 +15,12 @@ class Server extends Model
     protected $fillable = [
         'user_id', 'asset_id', 'brand', 'name', 'price', 'valid'
     ];
+
+    /**
+     * Get the modules for the server.
+     */
+    public function modules()
+    {
+        return $this->hasMany('App\Modules\Models\Module')->whereDeleted(0);
+    }
 }

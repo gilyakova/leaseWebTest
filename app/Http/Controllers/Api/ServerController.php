@@ -2,15 +2,13 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Models\User;
 use App\Servers\Services\ServerService;
 use Illuminate\Http\Request;
 
 class ServerController
 {
-
     /**
-     * Return list of servers
+     * Return list
      * @return array
      */
     public function list()
@@ -18,5 +16,13 @@ class ServerController
         return (new ServerService())->getList();
     }
 
+    /**
+     * Add new item
+     * @return array
+     */
+    public function add(Request $request)
+    {
+        return (new ServerService())->add($request);
+    }
 }
 

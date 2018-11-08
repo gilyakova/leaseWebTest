@@ -25,7 +25,7 @@ class CreateServerRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'asset_id' => 'required|integer|unique:servers,asset_id',
+            'assetId' => 'required|integer|unique:servers,asset_id',
             'brand' => 'required|max:100',
             'name' => 'required|max:100',
             'price' => 'required|numeric|min:1'
@@ -40,7 +40,7 @@ class CreateServerRequest extends FormRequest
     public function filters()
     {
         return [
-            'asset_id' => 'trim',
+            'assetId' => 'trim',
             'brand' => 'trim',
             'name' => 'trim',
             'price' => 'trim'

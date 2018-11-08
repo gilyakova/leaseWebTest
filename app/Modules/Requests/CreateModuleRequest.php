@@ -2,6 +2,7 @@
 namespace App\Modules\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use App\Modules\Models\Module;
 
 /**
  */
@@ -25,8 +26,8 @@ class CreateModuleRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'server_id' => 'required|integer|exists:servers,id',
-            'type' => 'required|in:DDR,DDR2,DDR3,DDR4,SDR,SDRAM,SRAM', // better way to use another table and validation "exists"
+            'serverId' => 'required|integer|exists:servers,id',
+            'type' => 'required|in:'.implode(',', Module::TYPES), // better way to use another table and validation "exists"
             'size' => 'required|integer|min:1'
         ];
     }
@@ -39,7 +40,7 @@ class CreateModuleRequest extends FormRequest
     public function filters()
     {
         return [
-            'server_id' => 'trim',
+            'serverId' => 'trim',
             'type' => 'trim',
             'size' => 'trim'
         ];
