@@ -19,7 +19,7 @@
         </option>
       </select>
 
-      <labeL>*Size</labeL>
+      <labeL>*Size (GigaByte)</labeL>
       <input type="number" required min="1" class="form-control mb-3" name="size" v-model="size" />
 
       <button type="submit" class="btn btn-primary">Save</button>

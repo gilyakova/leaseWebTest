@@ -47768,9 +47768,9 @@ var render = function() {
                             _vm._v(
                               "\n                        " +
                                 _vm._s(module_item.type) +
-                                " (size: " +
+                                " " +
                                 _vm._s(module_item.size) +
-                                ")\n                        "
+                                " GB\n                        "
                             ),
                             _c(
                               "button",
@@ -48457,7 +48457,7 @@ var render = function() {
             })
           ),
           _vm._v(" "),
-          _c("labeL", [_vm._v("*Size")]),
+          _c("labeL", [_vm._v("*Size (GigaByte)")]),
           _vm._v(" "),
           _c("input", {
             directives: [

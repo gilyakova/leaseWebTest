@@ -33,7 +33,7 @@
                   <td>
                     <ul>
                       <li v-for="module_item in item.modules">
-                        {{ module_item.type }} (size: {{ module_item.size }})
+                        {{ module_item.type }} {{ module_item.size }} GB
                         <button type="button" @click="deleteModule(module_item)" class="badge badge-danger ml-1">delete</button>
                       </li>
                     </ul>
