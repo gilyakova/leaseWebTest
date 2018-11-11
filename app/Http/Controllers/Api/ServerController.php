@@ -9,7 +9,7 @@ class ServerController
 {
     /**
      * Return list
-     * @return array
+     * @return JSON
      */
     public function list()
     {
@@ -18,10 +18,19 @@ class ServerController
 
     /**
      * Add new item
-     * @return array
+     * @return JSON
      */
     public function add(Request $request)
     {
         return (new ServerService())->add($request);
+    }
+
+    /**
+     * Delete item
+     * @return JSON
+     */
+    public function delete(Request $request)
+    {
+        return (new ServerService())->delete($request);
     }
 }

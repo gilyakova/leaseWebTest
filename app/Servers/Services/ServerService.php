@@ -7,6 +7,7 @@ use App\Servers\Resources\ServerResource;
 use App\Servers\Requests\CreateServerRequest;
 use Illuminate\Http\Response;
 use Validator;
+use App\Modules\Services\ModuleService;
 
 /*
  */
@@ -49,7 +50,25 @@ class ServerService
         if (!$item) {
             return response()->json(['errors' => ['DB error']], Response::HTTP_BAD_REQUEST);
         }
-        return response()->json(['id' => $item->id, ], Response::HTTP_CREATED);
+        return response()->json(['id' => $item->id], Response::HTTP_CREATED);
+    }
+
+    /**
+     * Delete record
+     * @param Request $request
+     * @return JSON
+     */
+    public function delete(Request $request)
+    {
+        $item = Server::find($request->route('serverId'));
+        if (!$item) {
+            return response()->json(['errors' => ['Record not found']], Response::HTTP_BAD_REQUEST);
+        }
+        if ($item->update(['deleted' => 1]) != true) {
+            return response()->json(['errors' => ['DB error']], Response::HTTP_BAD_REQUEST);
+        }
+        (new ModuleService())->deleteByServer($request->route('serverId'));
+        return response()->json(null, Response::HTTP_OK);
     }
 
     /**
@@ -68,7 +87,6 @@ class ServerService
         if ((bool)$item->valid != $modulesValid) {
             $result = $item->update(['valid' => $modulesValid]);
         }
-        var_dump($result);die();
         return $result;
     }
 }

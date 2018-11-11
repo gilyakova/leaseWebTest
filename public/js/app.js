@@ -47486,6 +47486,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 
 
@@ -47531,6 +47533,36 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         });
       }
     },
+    deleteServer: function deleteServer(item) {
+      var _this = this;
+
+      if (confirm("Do you want to remove this server?")) {
+        axios.delete('/api/server/' + item.id).then(function (response) {
+          return _this.updateList();
+        }).catch(function (error) {
+          if (error.response.data.errors != undefined) {
+            _this.errors = error.response.data.errors;
+          } else {
+            alert('Unknown error');
+          }
+        });
+      }
+    },
+    deleteModule: function deleteModule(item) {
+      var _this2 = this;
+
+      if (confirm("Do you want to remove this module?")) {
+        axios.delete('/api/module/' + item.id).then(function (response) {
+          return _this2.updateList();
+        }).catch(function (error) {
+          if (error.response.data.errors != undefined) {
+            _this2.errors = error.response.data.errors;
+          } else {
+            alert('Unknown error');
+          }
+        });
+      }
+    },
     addModule: function addModule(server) {
       var closed = this.closeForm();
       if (closed) {
@@ -47541,13 +47573,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       }
     },
     updateList: function updateList(page) {
-      var _this = this;
+      var _this3 = this;
 
       if (page == undefined) {
         page = this.pagination.current_page;
       }
       axios.get('/api/server/list?page=' + page).then(function (response) {
-        return _this.items = response.data.data, _this.pagination = response.data.meta, _this.paginationLinks = response.data.links;
+        return _this3.items = response.data.data, _this3.pagination = response.data.meta, _this3.paginationLinks = response.data.links;
+      }).catch(function (error) {
+        if (error.response.data.errors != undefined) {
+          _this3.errors = error.response.data.errors;
+        } else {
+          alert('Unknown error');
+        }
       });
     },
 
@@ -47732,7 +47770,20 @@ var render = function() {
                                 _vm._s(module_item.type) +
                                 " (size: " +
                                 _vm._s(module_item.size) +
-                                ")\n                      "
+                                ")\n                        "
+                            ),
+                            _c(
+                              "button",
+                              {
+                                staticClass: "badge badge-danger ml-1",
+                                attrs: { type: "button" },
+                                on: {
+                                  click: function($event) {
+                                    _vm.deleteModule(module_item)
+                                  }
+                                }
+                              },
+                              [_vm._v("delete")]
                             )
                           ])
                         })
@@ -47752,6 +47803,20 @@ var render = function() {
                           }
                         },
                         [_vm._v("+module")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-sm btn-danger",
+                          attrs: { type: "button" },
+                          on: {
+                            click: function($event) {
+                              _vm.deleteServer(item)
+                            }
+                          }
+                        },
+                        [_vm._v("delete")]
                       )
                     ])
                   ]

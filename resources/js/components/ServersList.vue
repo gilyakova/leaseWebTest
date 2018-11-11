@@ -34,11 +34,13 @@
                     <ul>
                       <li v-for="module_item in item.modules">
                         {{ module_item.type }} (size: {{ module_item.size }})
+                        <button type="button" @click="deleteModule(module_item)" class="badge badge-danger ml-1">delete</button>
                       </li>
                     </ul>
                   </td>
                   <td>
                     <button type="button" @click="addModule(item)" class="btn btn-sm btn-info">+module</button>
+                    <button type="button" @click="deleteServer(item)" class="btn btn-sm btn-danger">delete</button>
                   </td>
                 </tr>
             </tbody>
@@ -98,6 +100,36 @@
           })
         }
       },
+      deleteServer: function (item) {
+        if (confirm("Do you want to remove this server?")) {
+          axios.delete('/api/server/' + item.id)
+          .then(response => (
+            this.updateList()
+          ))
+          .catch(error => {
+            if (error.response.data.errors != undefined) {
+              this.errors = error.response.data.errors;
+            } else {
+              alert('Unknown error');
+            }
+          });
+        }
+      },
+      deleteModule: function (item) {
+        if (confirm("Do you want to remove this module?")) {
+          axios.delete('/api/module/' + item.id)
+          .then(response => (
+            this.updateList()
+          ))
+          .catch(error => {
+            if (error.response.data.errors != undefined) {
+              this.errors = error.response.data.errors;
+            } else {
+              alert('Unknown error');
+            }
+          });
+        }
+      },
       addModule: function (server) {
         let closed = this.closeForm();
         if (closed) {
@@ -116,7 +148,14 @@
           this.items = response.data.data,
           this.pagination = response.data.meta,
           this.paginationLinks = response.data.links
-        ));
+        ))
+        .catch(error => {
+          if (error.response.data.errors != undefined) {
+            this.errors = error.response.data.errors;
+          } else {
+            alert('Unknown error');
+          }
+        });
       },
       closeForm: function(force) {
         if (force == true) {

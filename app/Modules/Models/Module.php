@@ -22,6 +22,6 @@ class Module extends Model
      * @var array
      */
     protected $fillable = [
-        'server_id', 'type', 'size',
+        'server_id', 'type', 'size', 'deleted'
     ];
 }

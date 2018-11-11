@@ -24,4 +24,13 @@ class ModuleController
     {
     	return ModuleService::types();
     }
+
+    /**
+     * Delete item
+     * @return JSON
+     */
+    public function delete(Request $request)
+    {
+        return (new ModuleService())->delete($request);
+    }
 }

@@ -37,11 +37,37 @@ class ModuleService
     }
 
     /**
+     * Delete record
+     * @param Request $request
+     * @return JSON
+     */
+    public function delete(Request $request)
+    {
+        $item = Module::find($request->route('moduleId'));
+        if (!$item) {
+            return response()->json(['errors' => ['Record not found']], Response::HTTP_BAD_REQUEST);
+        }
+        if ($item->update(['deleted' => 1]) != true) {
+            return response()->json(['errors' => ['DB error']], Response::HTTP_BAD_REQUEST);
+        }
+        return response()->json(null, Response::HTTP_OK);
+    }
+
+    /**
      * List of types
      * @return JSON
      */
     static function types()
     {
         return response()->json(['data' => Module::TYPES]);
+    }
+
+    /**
+     * List of types
+     * @return integer count of affected rows
+     */
+    public function deleteByServer($serverId)
+    {
+        return Module::where('server_id', $serverId)->update(['deleted' => 1]);
     }
 }
