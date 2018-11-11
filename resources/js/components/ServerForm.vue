@@ -12,7 +12,7 @@
       </div>
 
       <labeL>*Asset id</labeL>
-      <input type="text" required maxlength="100" class="form-control mb-3" name="assetId" v-model="assetId" />
+      <input type="number" required maxlength="100" class="form-control mb-3" name="assetId" v-model="assetId" />
 
       <labeL>*Brand</labeL>
       <input type="text" required maxlength="100" class="form-control mb-3" name="brand" v-model="brand" />
@@ -21,7 +21,7 @@
       <input type="text" required maxlength="100" class="form-control mb-3" name="name" v-model="name" />
 
       <labeL>*Price</labeL>
-      <input type="number" required min="1" class="form-control mb-3" name="price" v-model="price" />
+      <input type="number" required min="1" step="0.5" class="form-control mb-3" name="price" v-model="price" />
 
       <button type="submit" class="btn btn-primary">Save</button>
     </div>

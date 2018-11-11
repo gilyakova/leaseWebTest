@@ -2,7 +2,6 @@
 
 namespace App\Modules\Resources;
 
-
 use Illuminate\Http\Resources\Json\JsonResource;
 
 /**

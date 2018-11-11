@@ -45,5 +45,4 @@ class CreateModuleRequest extends FormRequest
             'size' => 'trim'
         ];
     }
-
 }

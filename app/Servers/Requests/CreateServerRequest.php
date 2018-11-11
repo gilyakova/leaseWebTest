@@ -46,5 +46,4 @@ class CreateServerRequest extends FormRequest
             'price' => 'trim'
         ];
     }
-
 }

@@ -25,4 +25,3 @@ class ServerController
         return (new ServerService())->add($request);
     }
 }
-

@@ -25,4 +25,3 @@ class ModuleController
     	return ModuleService::types();
     }
 }
-

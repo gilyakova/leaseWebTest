@@ -24,5 +24,4 @@ class Module extends Model
     protected $fillable = [
         'server_id', 'type', 'size',
     ];
-
 }
